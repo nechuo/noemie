@@ -1,17 +1,27 @@
 const styles = {
   root: {
-    padding: 43,
+    paddingTop: 30,
+    paddingLeft: 30,
     letterSpacing: "0em",
     textTransform: "none",
     fontFamily: "Helvetica",
   },
   image: { height: 299, width: 299 },
-  section: { fontSize: 20, marginTop: 43 },
+  sectionName: {
+    fontSize: 20,
+    marginTop: 43,
+    fontWeight: "bold",
+  },
+  section: {
+    overflowX: "auto",
+    whiteSpace: "nowrap",
+  },
   experienceName: {
-    fontSize: 14,
+    fontSize: 15,
     paddingTop: 10,
     display: "block",
     paddingBottom: 15,
+    fontWeight: "bold",
   },
   experience: {
     paddingTop: 30,

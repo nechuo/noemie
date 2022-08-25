@@ -6,9 +6,17 @@ const useStyles = createUseStyles(styles);
 const Header = ({ header }) => {
   const classes = useStyles();
   return (
-    <Link to="/" className={classes.link}>
-      <span className={classes.header}>{header}</span>
-    </Link>
+    <div className={classes.headerWrapper}>
+      <Link to="/" className={classes.link}>
+        <span className={classes.header}>{header}</span>
+      </Link>
+      <Link to="/contact" className={classes.link}>
+        <span className={classes.sideMenuName}>Contact</span>
+      </Link>
+      <Link to="/about" className={classes.link}>
+        <span className={classes.sideMenuName}>A Propos</span>
+      </Link>
+    </div>
   );
 };
 
