@@ -5,12 +5,6 @@ const styles = {
     textTransform: "none",
     fontFamily: "Helvetica",
   },
-  header: {
-    fontWeight: "bold",
-    lineHeight: "1.4em",
-    fontStyle: "normal",
-    fontSize: "calc((2 - 1) * 1.2vw + 1rem)",
-  },
   image: { height: 299, width: 299 },
   section: { fontSize: 20, marginTop: 43 },
   experienceName: {
@@ -22,6 +16,10 @@ const styles = {
   experience: {
     paddingTop: 30,
     paddingRight: 7,
+  },
+  link: {
+    color: "black",
+    textDecoration: "none",
   },
 };
 

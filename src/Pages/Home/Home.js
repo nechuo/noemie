@@ -1,50 +1,32 @@
+import data from "../../data";
 import styles from "./Home.css";
+import { Link } from "react-router-dom";
 import { createUseStyles } from "react-jss";
+import Header from "../../Components/Header/Header";
 const useStyles = createUseStyles(styles);
 
 const Home = () => {
   const classes = useStyles();
-  const data = {
-    header: "Noemie",
-    sections: [
-      {
-        name: "Section 1",
-        experiences: [{ imageName: "1.jpg", name: "Experience 1" }],
-      },
-      {
-        name: "Section 2",
-        experiences: [
-          { imageName: "1.jpg", name: "Experience 2" },
-          { imageName: "1.jpg", name: "Experience 3" },
-        ],
-      },
-      {
-        name: "Section 3",
-        experiences: [
-          { imageName: "1.jpg", name: "Experience 4" },
-          { imageName: "1.jpg", name: "Experience 5" },
-          { imageName: "1.jpg", name: "Experience 6" },
-          { imageName: "1.jpg", name: "Experience 7" },
-        ],
-      },
-    ],
-  };
 
   return (
     <div className={classes.root}>
-      <span className={classes.header}>{data.header}</span>
+      <Header header={data.header} />
       {data.sections.map((section, index) => (
         <div key={index}>
           <div className={classes.section}>{section.name}</div>
           <div style={{ display: "flex" }}>
             {section.experiences.map((experience, index) => (
               <div className={classes.experience} key={index}>
-                <img
-                  alt=""
-                  className={classes.image}
-                  src={`/images/Home/${experience.imageName}`}
-                />
-                <div className={classes.experienceName}>{experience.name}</div>
+                <Link to={experience.imageName} className={classes.link}>
+                  <img
+                    alt=""
+                    className={classes.image}
+                    src={`/images/Home/${experience.imageName}`}
+                  />
+                  <div className={classes.experienceName}>
+                    {experience.name}
+                  </div>
+                </Link>
               </div>
             ))}
           </div>
