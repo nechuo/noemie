@@ -34,12 +34,13 @@ const styles = {
     width: 330,
     height: 330,
     marginRight: 7,
-    marginBottom: 7,
+    marginBottom: 35,
   },
   bottomImages: {
     marginTop: 98,
     display: "flex",
     flexWrap: "wrap",
+    justifyContent: "space-around",
   },
   video: {
     marginTop: 30,
