@@ -23,7 +23,9 @@ const data = {
             { imageName: "1" },
             { imageName: "1" },
           ],
-          video: { videoName: "video_1" },
+          video: {
+            videoName: "https://media.w3.org/2010/05/sintel/trailer_hd",
+          },
         },
         {
           imageName: "1",
@@ -82,7 +84,9 @@ const data = {
         {
           imageName: "1",
           name: "Experience 6",
-          video: { videoName: "video_1" },
+          video: {
+            videoName: "https://media.w3.org/2010/05/sintel/trailer_hd",
+          },
         },
       ],
     },

@@ -28,7 +28,7 @@ const Details = (props) => {
       {props.experience.video && (
         <div className={classes.video}>
           <div style={{ width: 1300 }}>
-            <Player src={`/videos/${props.experience.video.videoName}.mp4`} />
+            <Player src={`${props.experience.video.videoName}.mp4`} />
           </div>
         </div>
       )}
