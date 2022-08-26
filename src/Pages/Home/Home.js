@@ -13,7 +13,7 @@ const Home = ({ data }) => {
       {data.sections.map((section, index) => (
         <div className={classes.section} key={index}>
           <div className={classes.sectionName}>{section.name}</div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
             {section.experiences.map((experience, index) => (
               <div className={classes.experience} key={index}>
                 <Link

@@ -34,11 +34,12 @@ const styles = {
     width: 330,
     height: 330,
     marginRight: 7,
+    marginBottom: 7,
   },
   bottomImages: {
     marginTop: 98,
-    overflowX: "auto",
-    whiteSpace: "nowrap",
+    display: "flex",
+    flexWrap: "wrap",
   },
   video: {
     marginTop: 30,
