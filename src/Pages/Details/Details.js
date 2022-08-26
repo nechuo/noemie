@@ -1,5 +1,7 @@
 import styles from "./Details.css";
+import { Player } from "video-react";
 import { createUseStyles } from "react-jss";
+
 import Header from "../../Components/Header/Header";
 const useStyles = createUseStyles(styles);
 
@@ -23,6 +25,13 @@ const Details = (props) => {
           ))}
         </div>
       </div>
+      {props.experience.video && (
+        <div className={classes.video}>
+          <div style={{ width: 1300 }}>
+            <Player src={`/videos/${props.experience.video.videoName}.mp4`} />
+          </div>
+        </div>
+      )}
       <div className={classes.bottomImages}>
         {props.experience.bottomImages?.map((image) => (
           <img

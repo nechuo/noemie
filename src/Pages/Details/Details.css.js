@@ -40,6 +40,11 @@ const styles = {
     overflowX: "auto",
     whiteSpace: "nowrap",
   },
+  video: {
+    marginTop: 30,
+    display: "flex",
+    justifyContent: "center",
+  },
 };
 
 export default styles;
