@@ -42,7 +42,7 @@ const styles = {
   },
   video: {
     marginTop: 30,
-    marginRight: 15,
+    marginRight: 25,
     display: "flex",
     justifyContent: "center",
   },
