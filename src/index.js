@@ -3,13 +3,13 @@ import React from "react";
 import data from "./data";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
-import ReactDOM from "react-dom/client";
+import { render } from "react-dom";
 import Contact from "./Pages/Contact/Contact";
 import Details from "./Pages/Details/Details";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+const container = document.getElementById("root");
+render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
@@ -32,5 +32,6 @@ root.render(
         )}
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  container
 );
