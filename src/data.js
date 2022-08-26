@@ -43,7 +43,11 @@ const data = {
       name: "Chapitre 3",
       experiences: [
         { imageName: "1", name: "Experience 4" },
-        { imageName: "1", name: "Experience 5" },
+        {
+          imageName: "1",
+          name: "Experience 5",
+          description: "Ceci est un test",
+        },
         { imageName: "1", name: "Experience 6" },
         { imageName: "1", name: "Experience 7" },
       ],
