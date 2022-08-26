@@ -31,8 +31,8 @@ const styles = {
     marginBottom: 7,
   },
   bottomImage: {
-    width: 330,
-    height: 330,
+    width: 280,
+    height: 280,
     marginRight: 7,
     marginBottom: 35,
   },
