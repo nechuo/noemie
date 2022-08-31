@@ -8,11 +8,11 @@ const EditMode = (props) => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
 
-  const handleSubmit = () => {
+  const handleSubmit = (test) => {
     form
       .validateFields()
       .then((values) => {
-        if (values.password === process.env.EDIT_MODE_PASSWORD) {
+        if (values.password === process.env.REACT_APP_EDIT_MODE_PASSWORD) {
           setIsModalVisible(false);
           navigate("/");
           props.setIsEditMode(true);
