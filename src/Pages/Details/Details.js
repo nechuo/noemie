@@ -12,15 +12,17 @@ const Details = (props) => {
       <Header header={props.header} />
       <div className={classes.detail}>
         <div className={classes.description}>
-          <div className={classes.experienceName}>{props.experience.name}.</div>
-          {props.experience.description}
+          <div className={classes.experienceName}>
+            {props.experience?.name}.
+          </div>
+          {props.experience?.description}
         </div>
         <div className={classes.sideImages}>
-          {props.experience.sideImages?.map((image) => (
+          {props.experience?.sideImages?.map((image) => (
             <img
               alt=""
               className={classes.sideImage}
-              src={`/images/Home/${image.imageName}.jpg`}
+              src={`/images/Home/${image?.imageName}.jpg`}
             />
           ))}
         </div>
@@ -28,16 +30,16 @@ const Details = (props) => {
       {props.experience.video && (
         <div className={classes.video}>
           <div style={{ width: 1300 }}>
-            <Player src={`${props.experience.video.videoName}.mp4`} />
+            <Player src={`${props.experience?.video?.videoName}.mp4`} />
           </div>
         </div>
       )}
       <div className={classes.bottomImages}>
-        {props.experience.bottomImages?.map((image) => (
+        {props.experience?.bottomImages?.map((image) => (
           <img
             alt=""
             className={classes.bottomImage}
-            src={`/images/Home/${image.imageName}.jpg`}
+            src={`/images/Home/${image?.imageName}.jpg`}
           />
         ))}
       </div>

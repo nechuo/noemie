@@ -10,23 +10,23 @@ const Home = ({ data }) => {
   return (
     <div className={classes.root}>
       <Header header={data.header} />
-      {data.sections.map((section, index) => (
+      {data.sections?.map((section, index) => (
         <div className={classes.section} key={index}>
           <div className={classes.sectionName}>{section.name}</div>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
-            {section.experiences.map((experience, index) => (
+            {section?.experiences?.map((experience, index) => (
               <div className={classes.experience} key={index}>
                 <Link
-                  to={experience.name.replace(" ", "_")}
+                  to={experience?.name?.replace(" ", "_")}
                   className={classes.link}
                 >
                   <img
                     alt=""
                     className={classes.image}
-                    src={`/images/Home/${experience.imageName}.jpg`}
+                    src={`/images/Home/${experience?.imageName}.jpg`}
                   />
                   <div className={classes.experienceName}>
-                    {experience.name}
+                    {experience?.name}
                   </div>
                 </Link>
               </div>
