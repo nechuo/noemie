@@ -15,13 +15,20 @@ const styles = {
   },
   sideMenuName: {
     fontSize: 18,
-    marginTop: 11,
+    marginTop: 6,
     float: "right",
     marginRight: 15,
     fontWeight: "bold",
   },
   headerWrapper: {
     paddingRight: 25,
+    marginBottom: 11,
+  },
+  saveButton: {
+    float: "right",
+    marginTop: 4,
+    marginRight: 15,
+    fontWeight: "bold",
   },
 };
 

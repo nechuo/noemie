@@ -4,13 +4,17 @@ import { createUseStyles } from "react-jss";
 import Header from "../../Components/Header/Header";
 const useStyles = createUseStyles(styles);
 
-const Home = ({ data }) => {
+const Home = (props) => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Header header={data.header} />
-      {data.sections?.map((section, index) => (
+      <Header
+        header={props.siteContent.header}
+        isEditMode={props.isEditMode}
+        setIsEditMode={props.setIsEditMode}
+      />
+      {props.siteContent.sections?.map((section, index) => (
         <div className={classes.section} key={index}>
           <div className={classes.sectionName}>{section.name}</div>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
