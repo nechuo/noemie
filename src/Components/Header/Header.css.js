@@ -16,19 +16,20 @@ const styles = {
   sideMenuName: {
     fontSize: 18,
     marginTop: 6,
-    float: "right",
     marginRight: 15,
     fontWeight: "bold",
+    marginLeft: "auto",
   },
   headerWrapper: {
+    display: "flex",
     paddingRight: 25,
     marginBottom: 11,
   },
   saveButton: {
-    float: "right",
     marginTop: 4,
     marginRight: 15,
     fontWeight: "bold",
+    marginLeft: "auto",
   },
 };
 

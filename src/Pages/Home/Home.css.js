@@ -6,13 +6,15 @@ const styles = {
     textTransform: "none",
     fontFamily: "Helvetica",
   },
-  image: { height: 299, width: 299 },
+  image: { height: 299, width: 299, borderBottom: 5 },
   sectionName: {
     fontSize: 20,
-    marginTop: 43,
+    width: "content",
+    cursor: "default",
     fontWeight: "bold",
   },
   section: {
+    marginTop: 43,
     overflowX: "auto",
     whiteSpace: "nowrap",
   },
